@@ -56,12 +56,10 @@ print(mediaa(lista))
 
 sustituto=int(input("introduce un numero: "))
 def sustituir (lista):
-    for i in range(len(lista)):
-        lista[10]=sustituto
-    return sustituto
+    lista[0]=sustituto
+    return lista
 print(sustituir(lista))
 print(lista)
-
 
 def mostrar (lista):
     numeros=lista[0]
@@ -77,9 +75,18 @@ tal forma que el último pase a la primera posición, el primero a la segunda, e
 segundo a la tercera, y así sucesivamente."""
 
 lista=[1,2,3,4,5,6,7,8,9,10]
+numAntiguo=lista[0]
+numCambio=0
+lista[0]=lista/len(lista-1)
 
-for i in range(len(lista)):
-    lista[i]+
+def desplazar(lista):
+    for i in range(1, len(lista)):
+        numCambio=lista[i]
+        lista[i]=numAntiguo
+        numAntiguo=numCambio
+    
+    return lista
+print(lista)
     
 
 
