@@ -75,18 +75,19 @@ tal forma que el último pase a la primera posición, el primero a la segunda, e
 segundo a la tercera, y así sucesivamente."""
 
 lista=[1,2,3,4,5,6,7,8,9,10]
-numAntiguo=lista[0]
-numCambio=0
-lista[0]=lista/len(lista-1)
+
 
 def desplazar(lista):
-    for i in range(1, len(lista)):
+    numAntiguo=lista[0]
+    numCambio=0
+    lista[0]=lista[(len(lista))-1]
+    for i in range(1,len(lista)):
         numCambio=lista[i]
         lista[i]=numAntiguo
         numAntiguo=numCambio
     
     return lista
-print(lista)
+print(desplazar(lista))
     
 
 
