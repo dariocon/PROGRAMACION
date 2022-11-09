@@ -99,6 +99,28 @@ Introduce el año de a fecha: 2009
 La fecha en formato largo es 15 de Marzo de 2009
 Debe validar los datos y ejecutarse hasta que se introduzca un día negativo."""
 
+def solicitarFecha(dia, mes, anno):
+    mensaje=f"La fecha en formato largo es {dia} de {mes} de {anno}"
+    return mensaje
 
+dia=int(input("dia: "))
+mes=int(input("mes: "))
+anno=int(input("anno: "))
+while dia >0:
+    while dia <1 and dia >31:
+        dia=int(input(". error. dia: "))
+    mes=int(input("mes: "))
+    while mes not in ["1", "2", "3", "4", "5", "6", "7", "8","9", "10", "11", "12"]:
+        mes=int(input("error. mes: "))
+    anno=int(input("anno: "))
+    while anno <0:
+        anno=int(input("error. anno: "))
+    print(solicitarFecha(dia, mes, anno))
+    dia=int(input("dia: "))
+    mes=int(input("mes: "))
+    anno=int(input("anno: "))
+    print(solicitarFecha(dia, mes, anno))
+        
+print(solicitarFecha(dia, mes, anno))
         
         
