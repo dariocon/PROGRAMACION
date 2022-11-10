@@ -124,3 +124,58 @@ while dia >0:
 print(solicitarFecha(dia, mes, anno))
         
         
+"""4"""
+
+num=int(input("introduce un numero: "))
+
+lista= []
+pares=[]
+mayor=0
+
+while num>=0:
+    lista.append(num)
+    #if num>mayor:
+    #    mayor=num
+    if num%2==0:
+        pares.append(num)
+    num=int(input("introduce un numero: "))
+#print(f"Programa finalizado. El número mayor de la lista es {mayor} ")
+print("El mayor de la lista es ", (obtenerMayor(lista)))
+print("Los pares son", pares)
+
+"""for i in range(len(lista)):
+    if i%2=0:
+        pares.append(i)
+print(pares)"""
+        
+        
+"""5. Realiza una función reverse que reciba una lista y devuelva una nueva lista cuyo
+contenido sea igual a la original pero invertida. Así, dada la lista [‘Di’, ‘buen’, ‘día’, ‘a’,
+‘papa’], deberá devolver [‘papa’, ‘a’, ‘día’, ‘buen’, ‘Di’]."""
+
+
+
+lista=["Di", "buen", "día", "a", "papa"]
+
+def reversed(lista):
+for i in reversed(systems):
+    return i
+
+print(list(reversed(["Di", "buen", "día", "a", "papa"])))
+
+
+
+"""6"""
+
+lista=[0,4,3,1,5,2]
+
+for
+if num>mayor:
+    mayor=num
+    if num%2==0:
+        pares.append(num)
+    num=int(input("introduce un numero: "))
+#print(f"Programa finalizado. El número mayor de la lista es {mayor} ")
+print("El mayor de la lista es ", (obtenerMayor(lista)))
+print("Los pares son", pares)
+
