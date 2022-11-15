@@ -189,10 +189,14 @@ ficha2=[2,5]
 
 def encaja(ficha1,ficha2):
     encaja=True 
-    if ficha1==ficha2:
+    if ficha1[0]==ficha2[0]:
         encaja=True 
-    else:
-        encaja=False 
+    elif ficha1[1]==ficha2[1]:
+        encaja=True 
+    elif ficha1[1]==ficha2[0]:
+        encaja=True 
+    elif ficha1[0]==ficha2[1]:
+        encaja=True    
     return encaja 
 print(encaja(ficha1, ficha2))
 
