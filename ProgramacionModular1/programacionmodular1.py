@@ -197,4 +197,16 @@ def encaja(ficha1,ficha2):
 print(encaja(ficha1, ficha2))
 
 
+"""8"""
 
+num=0
+lista=[]
+def pedirNumero (lista):
+    num=1
+    while num>0:
+       num=int(input("introduce numero: "))
+       if num>0:
+           lista.append(num)
+       num=int(input("introduce numero: "))
+    return num
+print(pedirNumero(num))
