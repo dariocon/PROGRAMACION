@@ -165,17 +165,36 @@ print(list(reversed(["Di", "buen", "día", "a", "papa"])))
 
 
 
+
+
 """6"""
 
 lista=[0,4,3,1,5,2]
 
-for
-if num>mayor:
-    mayor=num
-    if num%2==0:
-        pares.append(num)
-    num=int(input("introduce un numero: "))
-#print(f"Programa finalizado. El número mayor de la lista es {mayor} ")
-print("El mayor de la lista es ", (obtenerMayor(lista)))
-print("Los pares son", pares)
+def estaOrdenada (lista):
+    valida=True
+    for i in range(1,len(lista)):
+        if lista[i]<lista[i-1]:
+            return False 
+    return valida
+print(estaOrdenada(lista))
+
+
+"""7.Escribir una función denominada encajan que indique si dos fichas de dominó
+encajan o no. Las fichas son recibidas en dos cadenas de texto con el siguiente
+formato
+[3,4] [2,5]"""
+ficha1=[3,4]
+ficha2=[2,5]
+
+def encaja(ficha1,ficha2):
+    encaja=True 
+    if ficha1==ficha2:
+        encaja=True 
+    else:
+        encaja=False 
+    return encaja 
+print(encaja(ficha1, ficha2))
+
+
 
