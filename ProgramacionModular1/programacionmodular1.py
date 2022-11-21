@@ -231,7 +231,8 @@ def sumar (lista):
     for i in (lista):
         suma+=i
     return suma
-print(sumar(lista))                    
+print(sumar(lista))    
+print (f"La suma de los elementos de la lista es {sumar(lista)}")
 
 def media (lista):
     media=sumar(lista)/(len(lista))
@@ -249,6 +250,6 @@ def factorial(lista):
                 factorial=factorial*j
             lista_factoriales+=[factorial]
     return lista_factoriales
-
+print (f"Los factoriales de cada elemento de la lista, en orden, son {factorial(lista)}")
 
 
