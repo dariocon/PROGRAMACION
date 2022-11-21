@@ -211,13 +211,19 @@ while num>=0:
         lista.append(num)
 print(lista)
 
-def listarPrimos(lista):
-    primos=[]
-    for i in range(1,len(lista)):
-        if lista[i]%i==0:
-            primos.append(lista[i])
-    return primos
-print(listarPrimos(lista))
+def num_primos (lista):  
+    num_primos=[]
+    for i in range (len(lista)):
+        contador=0
+        num=lista[i]
+        for i in range (2, num):
+            if num%i==0:
+                contador+=1
+        if contador==0:
+            num_primos.append(num)       
+    return (num_primos)  
+
+print (f"En la lista son número primos {num_primos (lista)}")
 
 
 def sumar (lista):
