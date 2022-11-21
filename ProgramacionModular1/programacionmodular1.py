@@ -239,4 +239,16 @@ def media (lista):
 print (f"La media de la lista es {media(lista)}")
 
 
+def factorial(lista):
+    lista_factoriales=[]
+    return factorizado
+    factorial=1
+    while num>0:
+        for i in lista:
+            for j in range (i, 1, -1)
+                factorial=factorial*j
+            lista_factoriales+=[factorial]
+    return lista_factoriales
+
+
 
