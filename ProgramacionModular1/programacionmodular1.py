@@ -258,7 +258,7 @@ llamada a tres funciones: a) para devolver una lista de números con los menores
 k, b) otra con los mayores y c) otra con aquellos que son múltiplos de k."""
 
 
-lista=[1,2,3,4,5,6,7,8,9,10]
+lista=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
 numero=9
 
 def obtenerMenorQue (lista):
@@ -270,3 +270,14 @@ def obtenerMenorQue (lista):
   return listaMenoresQue
 
 print(obtenerMenorQue(lista))
+
+def obtenerMayorQue (lista):
+  listaMayoresQue=[]
+  for i in range(len(lista)):
+    if lista[i] > numero:
+      listaMayoresQue.append(lista[i])
+          
+  return listaMayoresQue
+
+print(obtenerMayorQue(lista))
+
