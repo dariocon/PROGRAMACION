@@ -203,14 +203,23 @@ print(encaja(ficha1, ficha2))
 
 """8"""
 
-num=0
+
 lista=[]
-def pedirNumero (lista):
-    num=1
-    while num>0:
-       num=int(input("introduce numero: "))
-       if num>0:
-           lista.append(num)
-       num=int(input("introduce numero: "))
-    return num
-print(pedirNumero(num))
+num=0
+while num>=0:
+    num=int(input("introduce numero: "))
+    if num>0:
+        lista.append(num)
+print(lista)
+
+def es_primo(lista):
+    esPrimo= True
+    if num>2:
+        for i in range(1,len(lista)):
+            for i in range (2, num):
+                if num%i==0:
+                    esPrimo= False 
+    return esPrimo 
+print(es_primo(lista))
+
+
