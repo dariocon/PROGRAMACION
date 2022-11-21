@@ -306,3 +306,24 @@ def intersect(lista, lista2):
                listaComunes.append(i)
     return listaComunes
 print(intersect(lista, lista2))
+
+
+
+"""12. Escribe una función unionListas que reciba dos listas y devuelva los elementos que
+pertenecen a una, o bien, a la otra, pero sin repetir ninguno (unión de conjuntos)."""
+
+lista=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
+
+lista2=[2,4,5,8,10,15,30,20,25,90,7]
+
+def unionListas (lista,lista2):
+    Comun=[]
+    for i in lista:
+        if i in lista:
+            Comun.append(i)
+    for j in lista2:
+        if j in lista2 and j not in lista:
+            Comun.append(j)
+    return Comun
+print(unionListas (lista,lista2))
+            
