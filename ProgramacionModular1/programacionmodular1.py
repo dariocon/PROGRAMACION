@@ -228,19 +228,15 @@ print (f"En la lista son número primos {num_primos (lista)}")
 
 def sumar (lista):
     suma=0
-    for i in range(len(lista)):
+    for i in (lista):
         suma+=i
     return suma
-print(lista)
 print(sumar(lista))                    
 
-def mediaa (lista):
-    media=lista[0]
-    for i in range(len(lista)):
-        media=sumar(lista)/len(lista)
-    return media
-print(lista)
-print(mediaa(lista))
+def media (lista):
+    media=suma(lista)/(len(lista))
+    return (media)
+print (f"La media de la lista es {media(lista)}")
 
 
 
