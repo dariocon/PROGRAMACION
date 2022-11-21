@@ -326,4 +326,23 @@ def unionListas (lista,lista2):
             Comun.append(j)
     return Comun
 print(unionListas (lista,lista2))
+
+
+"""13. Escribe una función que, dada una lista de nombres y una letra, devuelva una lista
+con todos los nombres que empiezan por dicha letra. Debe validar los datos."""
+
+lista=["Manuel", "Horacio", "Homero", "Pepe", "Antonio", "Luis"]
+
+letra="H"
+
+def DevolverNombres (lista, letra):
+    listaNombres=[]
+    for i in lista:
+        if i[0]==letra:
+            listaNombres.append(i)
+    return listaNombres
+print(DevolverNombres (lista, letra))
+            
+
+
             
