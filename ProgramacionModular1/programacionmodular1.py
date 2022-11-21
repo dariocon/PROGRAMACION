@@ -264,7 +264,7 @@ numero=9
 def obtenerMenorQue (lista):
   listaMenoresQue=[]
   for i in range(len(lista)):
-    if lista[i] < 9:
+    if lista[i] < numero:
       listaMenoresQue.append(lista[i])
           
   return listaMenoresQue
