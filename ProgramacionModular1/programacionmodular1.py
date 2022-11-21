@@ -246,7 +246,7 @@ def factorial(lista):
     factorial=1
     while num>0:
         for i in lista:
-            for j in range (i, 1, -1)
+            for j in range (i, 1, -1):
                 factorial=factorial*j
             lista_factoriales+=[factorial]
     return lista_factoriales
@@ -289,3 +289,20 @@ def es_multiplo(lista):
             listaMultiplos.append(lista[i])
     return listaMultiplos
 print(es_multiplo(lista))
+
+
+
+"""11. Escribe una función intersect que reciba dos listas y devuelva otra lista con los
+elementos que son comunes a ambas, sin repetir ninguno."""
+
+lista=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
+
+lista2=[2,4,5,8,10,15,30,20,25,90,7]
+
+def intersect(lista, lista2):
+    listaComunes=[]
+    for i in lista:
+           if i in lista2 and i not in listaComunes:
+               listaComunes.append(i)
+    return listaComunes
+print(intersect(lista, lista2))
