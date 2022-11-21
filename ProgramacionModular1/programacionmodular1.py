@@ -234,7 +234,7 @@ def sumar (lista):
 print(sumar(lista))                    
 
 def media (lista):
-    media=suma(lista)/(len(lista))
+    media=sumar(lista)/(len(lista))
     return (media)
 print (f"La media de la lista es {media(lista)}")
 
