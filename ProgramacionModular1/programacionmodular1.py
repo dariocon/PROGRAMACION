@@ -253,3 +253,7 @@ def factorial(lista):
 print (f"Los factoriales de cada elemento de la lista, en orden, son {factorial(lista)}")
 
 
+"""9. Desarrolla un programa que a partir de una lista de números y un entero k, realice la
+llamada a tres funciones: a) para devolver una lista de números con los menores de
+k, b) otra con los mayores y c) otra con aquellos que son múltiplos de k."""
+
