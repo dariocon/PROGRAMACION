@@ -257,3 +257,16 @@ print (f"Los factoriales de cada elemento de la lista, en orden, son {factorial(
 llamada a tres funciones: a) para devolver una lista de números con los menores de
 k, b) otra con los mayores y c) otra con aquellos que son múltiplos de k."""
 
+
+lista=[1,2,3,4,5,6,7,8,9,10]
+numero=9
+
+def obtenerMenorQue (lista):
+  listaMenoresQue=[]
+  for i in range(len(lista)):
+    if lista[i] < 9:
+      listaMenoresQue.append(lista[i])
+          
+  return listaMenoresQue
+
+print(obtenerMenorQue(lista))
