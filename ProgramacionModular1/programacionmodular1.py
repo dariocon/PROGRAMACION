@@ -346,3 +346,12 @@ print(DevolverNombres (lista, letra))
 
 
             
+"""14. Escribe una función que, dada una lista de cadenas, devuelva la cadena más larga.
+Si dos o más cadenas miden lo mismo y son las más largas, la función devolverá la
+que tenga el mayor número de caracteres repetidos."""
+
+lista=["Gol", "Hola", "Uno", "Cabeza", "No", "Lalala"]
+
+def devolverCadenaLarga (lista):
+    for i in lista:
+        if 
