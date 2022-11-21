@@ -220,9 +220,21 @@ def listarPrimos(lista):
 print(listarPrimos(lista))
 
 
-                    
+def sumar (lista):
+    suma=0
+    for i in range(len(lista)):
+        suma+=i
+    return suma
+print(lista)
+print(sumar(lista))                    
 
-
+def mediaa (lista):
+    media=lista[0]
+    for i in range(len(lista)):
+        media=sumar(lista)/len(lista)
+    return media
+print(lista)
+print(mediaa(lista))
 
 
 
