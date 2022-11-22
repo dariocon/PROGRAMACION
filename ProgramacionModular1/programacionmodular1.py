@@ -355,12 +355,16 @@ lista=["Gol", "Hola", "Uno", "Cabeza", "No", "Lalala"]
 def devolverCadenaLarga (lista):
     cadenaMayor=""
     caracteres=[0]
+    comparado=[]
     for cadena in lista:
         if len(cadena)>len(cadenaMayor): 
             cadenaMayor=cadena
         if len(cadena)==len(cadenaMayor):           
     for cadena in lista:
         if len(cadenaMayor) == len(i):
+            comparado.append(i)
+    for j in comparado:
+        if i==
 
     
     
