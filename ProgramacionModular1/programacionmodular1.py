@@ -364,7 +364,15 @@ def devolverCadenaLarga (lista):
         if len(cadenaMayor) == len(i):
             comparado.append(i)
     for j in comparado:
-        if i==
+        repetidos=0
+        for x in range(len(i)):
+            for z in range(1,len(i)):
+                if i[x]==i[z]:
+                    repetidos+=1
+        if repetidos > repetidos2:
+           repetidos2=repetidos
+           palabra=i
+   return palabra            
 
     
     
