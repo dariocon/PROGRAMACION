@@ -353,5 +353,21 @@ que tenga el mayor número de caracteres repetidos."""
 lista=["Gol", "Hola", "Uno", "Cabeza", "No", "Lalala"]
 
 def devolverCadenaLarga (lista):
-    for i in lista:
-        if 
+    cadenaMayor=[0]
+    caracteres=[0]
+    for cadena in lista:
+        if len(cadena)>len(cadenaMayor): 
+            cadenaMayor=cadena
+        if len(cadena)==len(cadenaMayor):
+            
+    for caracteres in 
+
+    
+    
+
+
+
+
+
+print(devolverCadenaLarga(lista))
+            
