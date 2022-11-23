@@ -338,7 +338,7 @@ letra="H"
 def DevolverNombres (lista, letra):
     listaNombres=[]
     for i in lista:
-        if i[0]==letra:
+        if i[0].lower()==letra.lower():
             listaNombres.append(i)
     return listaNombres
 print(DevolverNombres (lista, letra))
