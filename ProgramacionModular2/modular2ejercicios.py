@@ -61,10 +61,10 @@ def getDayOfWeek (day, month, year):
     if month<1 or year<1 or day>31:
         print("Error")
     else:
-        a = (14 - month) / 12
+        a = (14 - month) // 12
         y = year - a
         m = month + 12 * a - 2
-        d = (day + y + y/4 - y/100 + y/400 + (31*m)/12) % 7
+        d = (day + y + y//4 - y//100 + y//400 + (31*m)//12) % 7
         d = Daysweek[d]
     return d
 print(getDayOfWeek (day, month, year))
