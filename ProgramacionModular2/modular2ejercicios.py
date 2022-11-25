@@ -50,3 +50,20 @@ def ComputeDaysInMonth (mes, año):
             diasTotal=meses[mes-1]
     return diasTotal
 print(ComputeDaysInMonth(mes, año))
+
+
+"""4."""
+def getDayOfWeek (day, month, year):
+    DaysWeek=[0=="Domingo", 1=="Lunes", 2=="Martes", 3=="Miércoles",
+               4=="Jueves", 5=="Viernes", 6=="Sábado"]
+    DaysMonth=[31,28,31,30,31,30,31,31,30,31,30,31]
+    
+    if month<1 or year<1 or day>31:
+        print("Error")
+    else:
+        a = (14 - month) / 12
+        y = year - a
+        m = month + 12 * a - 2
+        DaysWeek = (day + y + y/4 - y/100 + y/400 + (31*m)/12) mod 7
+    return d
+print(getDayOfWeek (day, month, year))
