@@ -53,6 +53,10 @@ print(ComputeDaysInMonth(mes, año))
 
 
 """4."""
+day=4
+month=15
+year=2005
+
 def getDayOfWeek (day, month, year):
     DaysWeek=[0=="Domingo", 1=="Lunes", 2=="Martes", 3=="Miércoles",
                4=="Jueves", 5=="Viernes", 6=="Sábado"]
@@ -65,6 +69,6 @@ def getDayOfWeek (day, month, year):
         y = year - a
         m = month + 12 * a - 2
         d = (day + y + y//4 - y//100 + y//400 + (31*m)//12) % 7
-        d = Daysweek[d]
+        d = DaysWeek[d]
     return d
-print(getDayOfWeek (day, month, year))
+print(getDayOfWeek(day, month, year))
