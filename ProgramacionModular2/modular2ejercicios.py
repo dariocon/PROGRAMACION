@@ -64,6 +64,7 @@ def getDayOfWeek (day, month, year):
         a = (14 - month) / 12
         y = year - a
         m = month + 12 * a - 2
-        DaysWeek = (day + y + y/4 - y/100 + y/400 + (31*m)/12) mod 7
+        d = (day + y + y/4 - y/100 + y/400 + (31*m)/12) mod 7
+        d = Daysweek[d]
     return d
 print(getDayOfWeek (day, month, year))
