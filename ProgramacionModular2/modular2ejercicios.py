@@ -76,4 +76,19 @@ print(getDayOfWeek(day, month, year))
 
 """5"""
 
+number1=5
+number2=4
+
+def powerIt (number1, number2):
+    potencia=1
+    if number1==None:
+        number1=0
+    for i in range(number1):
+        potencia=number2*potencia
+    return potencia
+print(powerIt (number1, number2))
+
+
+"""6"""
+
 
