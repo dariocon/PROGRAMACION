@@ -90,15 +90,15 @@ print(powerIt (number1, number2))
 
 
 """6"""
-
 number=345
 
 def getNumberOfDigits (number):
     digits=0
     lista=str(number)
     for i in range(len(lista)):
-        digits+=1
-    if digits==0:
-        digits=None
+        if lista[i]!="." and lista[i]!="-" and lista[i]!=" ":
+            digits+=1
+        else:
+            digits==None
     return digits
 print(getNumberOfDigits(number))
