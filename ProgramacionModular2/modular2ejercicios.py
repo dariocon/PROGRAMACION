@@ -162,7 +162,19 @@ print(getPrimeDivisors (number))
 
 
 
-
+"""10"""
+number=220 
+number2=284
+def isFriendNumber (number, number2):
+    divisores=0
+    isFriend=False 
+    for i in range(1,number-1):
+        if number%i==0:
+            divisores+=i
+    if divisores==number2:
+        isFriend=True
+    return isFriend
+print(isFriendNumber (number, number2))
 
 
 
