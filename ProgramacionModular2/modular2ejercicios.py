@@ -123,3 +123,47 @@ def isPrime (number):
         prime=None
     return prime
 print(isPrime(number))
+
+
+"""8. Diseñe un método llamado solveSecondOrderEquation que reciba tres números 
+enteros positivos correspondientes a los coeficientes de una ecuación de segundo 
+orden (ax2+bx+c=0) y calcule sus posibles soluciones. Si los parámetros no son válidos, 
+el método debería devolver Ninguno."""
+from math import sqrt
+a=2
+b=10
+c=5
+
+def solveSecondOrderEquation (a, b, c):
+    result=0
+    if a>0 and b>0 and c>0:
+        x1=(-b+sqrt(b**2-(4*a*c)))/2*a
+        x2=(-b-sqrt(b**2-(4*a*c)))/2*a
+        result=x1,x2
+    else:
+        result=None
+    return result
+print(solveSecondOrderEquation (a, b, c))
+
+
+
+"""9"""
+
+number=3
+def getPrimeDivisors (number):
+    lista=[0]
+    if number>0:
+        for i in range(1,number):
+            if number%i==0 and i!=isPrime:
+                lista.append(i)
+    return lista 
+print(getPrimeDivisors (number))
+
+
+
+
+
+
+
+
+
