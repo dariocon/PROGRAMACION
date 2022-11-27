@@ -91,4 +91,13 @@ print(powerIt (number1, number2))
 
 """6"""
 
+number=345
 
+def getNumberOfDigits (number):
+    digits=0
+    lista=[""]
+    lista=str(number)
+    for i in range(len(lista)):
+        digits+=1
+    return digits
+print(getNumberOfDigits(number))
