@@ -102,3 +102,24 @@ def getNumberOfDigits (number):
             digits==None
     return digits
 print(getNumberOfDigits(number))
+
+
+"""7"""
+
+number=10
+
+def isPrime (number):
+    prime=False 
+    contador=0
+    if number>0:
+        for i in range(2,number):
+            if number%i==0:
+                contador+=1
+        if contador==0:
+            prime=True
+        else:
+            prime=False
+    else:
+        prime=None
+    return prime
+print(isPrime(number))
