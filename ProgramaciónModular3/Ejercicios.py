@@ -21,7 +21,7 @@ print(charactersInString (cadena, caracter))
     
     
     
-"""2. 2. Diseñe una función llamada lowCaseInString que tenga una cadena 
+"""2.  Diseñe una función llamada lowCaseInString que tenga una cadena 
 de caracteres como parámetro, el método debe devolver cuántos de esos 
 caracteres son letras minúsculas."""
 
@@ -38,7 +38,7 @@ print(lowCaseInString (cadena))
 
 
 
-"""3.3. Design a function called upperCaseInString that has a string of
+"""3. Design a function called upperCaseInString that has a string of
 characters as parameter and the method should return how many are uppercase 
 letters."""
 cadena="HolaJe"
@@ -58,5 +58,103 @@ def uppercaseletters (cadena):
             contador+=1
     return contador
 print(uppercaseletters (cadena))
+
+
+
+"""4. Diseñe una función llamada númeroEnCadena que reciba una cadena de caracteres como parámetro
+ y devuelva cuántos de ellos son números."""
+ 
+cadena="hd73hd83hd93hd93hd93hd9"
+ 
+def numeroenCadena (cadena):
+    numeros=0
+    for i in cadena:
+        if i.isdigit():
+            numeros+=1
+    return numeros
+print(numeroenCadena(cadena))
+     
+
+"""5. Diseñar una función llamada palíndromo que tenga como parámetro de entrada una cadena de caracteres, y devuelva
+ True si es un palíndromo o False en los demás casos. Una palabra es un palíndromo si se puede leer igual de 
+ izquierda a derecha o de derecha a izquierda, ignorando los blancos. Por ejemplo: "anilina" o "Dabale arroz a 
+ la zorra el abad" Para simplificar el problema, se puede suponer que se utilizan caracteres simples, es decir, sin 
+ tildes ni diresis."""
+ 
+cadena="Dabale arroz a la zorra el abad"
+def palindromo (cadena):
+    cadena = cadena.replace(" ", "")
+    palindromomo=False 
+    if cadena.lower()==cadena[::-1].lower():
+        palindromomo=True 
+    return palindromomo
+print(palindromo(cadena))
+
+
+"""6.Realizar una función que busque una palabra escondida dentro de un texto. Por ejemplo,si la cadena es
+ “shybaoxlna” y la palabra que queremos buscar es “hola”, entonces si seencontrará y deberá devolver True, en
+  caso contrario deberá devolver False. Las letrasde la palabra escondida deben aparecer en el orden correcto en 
+  la cadena que la oculta:
+          shybaoxlna ⇒ hola: True
+          soybahxlna ⇒ hola: False"""
+
+
+cadena="shybaoxlna"
+palabraBusca="hola"
+
+def buscarPalabra (cadena, palabraBusca):
+    palabra=""
+    contador=0
+    valido=False
+    for i in cadena:
+        if i==palabraBusca[contador]:
+            palabra+=i
+            contador+=1
+    if palabra==palabraBusca:
+        valido=True
+    return valido
+print(buscarPalabra(cadena, palabraBusca))
+        
+        
+        
+"""7. Diseñar una función que reciba como parámetro tres cadenas, la primera será una frase y deberá buscar
+ si existe la palabra que recibe como segundo parámetro y reemplazarlapor la tercera."""
+ 
+cadena="Hola, Manuel"
+palabraBusca="Manuel"
+palabra2="Pepe"
+
+def cambiarPalabra (cadena, palabraBusca, palabra2):
+    resultado=""
+    if buscarPalabra(cadena, palabraBusca)==True:
+        palabraBusca=palabra2
+        #borrar palabraBusca en cadena
+        resultado=cadena+palabra2
+    return resultado
+print(cambiarPalabra(cadena, palabraBusca, palabra2))
+
+
+"""8.Diseñar una función que determine la cantidad de vocales diferentes, que tiene una palabra o frase 
+introducida por teclado. Por ejemplo, la cadena “Abaco”, devolvería 2."""
+
+cadena="Buenas tardes, Pepe"
+
+def contarVocales (cadena):
+    vocales="aeiou"
+    vocalesEncontradas=[]
+    for i in cadena:
+        if i in vocales:
+            if i not in vocalesEncontradas:
+                vocalesEncontradas.append(i)
+    return len(vocalesEncontradas)
+print(contarVocales(cadena))
+            
+                
+            
+""".9. 9. Crear una función que, tomando una cadena de texto como entrada, construya y devuelva 
+otra cadena formada de la siguiente manera: todas las consonantes estarán alprincipio y todas las 
+vocales al final de la misma, eliminando los blancos. Por ejemplo,pasándole la cadena "curso de programacion", una 
+posible solución sería"crsdprgrmcnuoeoaaio’."""
+
 
     
