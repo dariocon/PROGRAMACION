@@ -21,7 +21,7 @@ print(charactersInString (cadena, caracter))
     
     
     
-"""2.  Diseñe una función llamada lowCaseInString que tenga una cadena 
+"""2. 2. Diseñe una función llamada lowCaseInString que tenga una cadena 
 de caracteres como parámetro, el método debe devolver cuántos de esos 
 caracteres son letras minúsculas."""
 
@@ -38,7 +38,7 @@ print(lowCaseInString (cadena))
 
 
 
-"""3. Design a function called upperCaseInString that has a string of
+"""3.3. Design a function called upperCaseInString that has a string of
 characters as parameter and the method should return how many are uppercase 
 letters."""
 cadena="HolaJe"
@@ -49,16 +49,6 @@ def uppercaseletters (cadena):
             contador+=1
     return contador
 print(uppercaseletters (cadena))
-
-
-def uppercaseletters (cadena):
-    contador=0
-    for i in cadena:
-        if i.upper==caracter.upper:
-            contador+=1
-    return contador
-print(uppercaseletters (cadena))
-
 
 
 """4. Diseñe una función llamada númeroEnCadena que reciba una cadena de caracteres como parámetro
@@ -152,10 +142,37 @@ print(contarVocales(cadena))
                 
             
 """.9. 9. Crear una función que, tomando una cadena de texto como entrada, construya y devuelva 
-otra cadena formada de la siguiente manera: todas las consonantes estarán alprincipio y todas las 
+otra cadena formada de la siguiente manera: todas las consonantes estarán al principio y todas las 
 vocales al final de la misma, eliminando los blancos. Por ejemplo,pasándole la cadena "curso de programacion", una 
 posible solución sería"crsdprgrmcnuoeoaaio’."""
 
+cadena="El plato se ha roto."
 
-    
-mhvbmbmb
+def ConsonantesYVocales (cadena):
+    vocales="aeiou"
+    consonantes="qwrtypsdfghjklñzxcvbnm"
+    resultado=""
+    for j in cadena.lower():
+        if j in consonantes:
+            resultado+=j
+
+    for i in cadena.lower():
+        if i in vocales:
+            resultado+=i
+
+            
+    return resultado
+print(ConsonantesYVocales(cadena))
+
+
+"""10. Escribir una función que devuelva el número de palabras que hay en una cadena que recibe como parámetro. 
+Ten en cuenta que entre dos palabras puede haber más de un blanco. También al principio y al final de la frase puede
+haber blancos redundantes. Por ejemplo, si la cadena es “He estudiado mucho”, debe devolver 3."""
+ 
+cadena=" El balón  se ha desinflado "
+
+def numeroPalabras (cadena):
+    resultado=[]
+    for i in cadena:
+        if i 
+#No sé
